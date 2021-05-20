@@ -49,31 +49,21 @@ p{
 
 button{
   color:#ff4da0;
-	font-family: 'Bungee', cursive;
+  font-family: 'Fredericka the Great', cursive;
   font-size: 20px;
- border: 5px solid #ff4da0;
+ border: 2px solid #ff4da0;
     padding: 7px;
-  width:300px;
+  width:200px;
   background-color: white;
   text-align: center;
+  position:relative;
+  left:100px;
 }
 button:hover, button:focus {
   background-color: #b3fffc;
   color: #00c1d6;
   border-color: rgba(10, 209, 206);
 
-}
-
-.select-box {
-  border: 5px dotted #fcff59;
-  padding: 7px;
-  width:300px;
-  background-color: none;
-  text-align: center;
-	position: absolute;
-	top: 420px;
-  Left: ;
-  animation:button 10s;
 }
 
 a{
@@ -110,6 +100,6 @@ a{
 .summary{
   position: relative;
   z-index:2;
-  left: 420px;
-  top: -1400px
+  left: 430px;
+  top: -1500px
 }

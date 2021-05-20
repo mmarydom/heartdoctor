@@ -5,16 +5,26 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 	<link rel=stylesheet href="css/drag.css"/>
+	<script src="js/surgery.js" defer></script>
 </head>
-    <body>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+<body>
 
         <canvas id="canvas" class="canvas"></canvas>
-        <div id="div1">Me</div>
-        <div id="div2">You</div>
-        <div id="div3">Us</div>
-        <div id="div4">Them</div>
-
-
+        <div id="div1"> <a href="heart-scene.html"
+															><img src="images/heart.png"
+		         style = "width:150px;
+		                  height: 150px;
+											position: relative;
+											top:100px;
+											left: 100px"></a></div>
+        <div id="div2">Drag<img src="images/lung.png"		         style = "width:250px;
+						                  height: 250px;"></div>
+        <div id="div3">Drag<img src="images/rib.png"		         style = "width:300px;
+						                  height: 300px;"></div>
+        <div id="div4">Drag<img src="images/skin.png" 		         style = "width:420px;
+						                  height: 370px;"></div>>
 
         <script>
             divs = document.getElementsByTagName("div");
@@ -61,22 +71,7 @@
                 the_moving_div = "";
             }
 
-            function drawConnectors() {
-                var canvas = document.getElementById('canvas');
-                var ctx = canvas.getContext('2d');
-                ctx.clearRect(0,0,canvas.width,canvas.height);
-                ctx.beginPath();
-                ctx.strokeStyle="#15a5ed";
-                ctx.lineWidth=3;
-                for (div1 of divs) for (div2 of divs) {
-                    if (div1 == div2) continue;
-                    ctx.moveTo(div1.offsetLeft + div1.clientWidth/2, div1.offsetTop + div1.clientHeight/2);
-                    ctx.bezierCurveTo(div1.offsetLeft, div1.offsetTop,
-                                      div2.offsetLeft, div2.offsetTop,
-                                      div2.offsetLeft + div2.clientWidth/2, div2.offsetTop + div2.clientHeight/2);
-                    ctx.stroke();
-                }
-            }
+
         </script>
     </body>
 </html>
