@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+
+* {box-sizing: border-box;}
+
+body {
+  font-family: 'Fredericka the Great', cursive;
+    width: 300px;
+    color: #ff0000;
+    letter-spacing: 5px;
+    font-weight: normal;
+    font-size: 25px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:url("../images/office.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+.card {
+  display: grid;
+  grid-template-columns: 450px;
+  grid-template-rows: 300px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+  border-radius: 18px;
+  background: url("../images/card.jpg");
+  -ms-transform: rotate(20deg); /* IE 9 */
+   transform: rotate(20deg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  text-align: center;
+  cursor: pointer;
+  margin:30px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+    position: relative;
+    left:50px;
+}
+
+.box {
+
+  position:relative;
+      left:-170px;
+      top:2px;
+      background-color: rgba(255,255,255,0.7);
+      /* For IE 5.5 - 7*/
+      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+      /* For IE 8*/
+      -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99222222, endColorstr=#99222222);
+      z-index:10;
+      padding:100px;
+      width:500px;
+      height:650px;
+  -moz-box-shadow:0px 0px 7px #ffffff;
+  -webkit-box-shadow:0px 0px 7px #ffffff;
+  box-shadow:0px 0px 7px #ffffff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+
+}
+
+button{
+  color:#ff4da0;
+	font-family: 'Bungee', cursive;
+  font-size: 20px;
+ border: 5px solid #ff4da0;
+    padding: 7px;
+  width:300px;
+  background-color: white;
+  text-align: center;
+  animation:button 20s;
+}
+button:hover, button:focus {
+  background-color: #b3fffc;
+  color: #00c1d6;
+  border-color: rgba(10, 209, 206);
+
+}
+
+@keyframes button{
+  0% {opacity:0;}
+  50% {opacity:0;}
+  75% {opacity:0;}
+  100% {opacity:1}
+}

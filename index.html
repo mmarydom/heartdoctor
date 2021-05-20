@@ -1,54 +1,56 @@
-<html>
-<head>
-<title>Three.js - examples</title>
-<link rel=stylesheet href="css/index.css"/>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<div class="bigTitle">Three.js Examples</div>
+    <title>HeartDoctor</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+
+    <div class="camera">
+      <img class="camera-head" src="images/scapel.png">
+    </div>
+
+    <img src="images/splatter.png"
+         style = "width:400px;
+                  height: 400px;
+                  z-index:1;
+                  left: -10px;
+                  top: 100px">
+
+    <img src="images/splatter3.png"
+         style = "width:400px;
+                  height: 400px;
+                  z-index:1;
+                  left: 200px;
+                  top: -100px">
+
+    <img src="images/splatter2.png"
+          style = "width:450px;
+                   height: 450px;
+                   z-index:1;
+                   left: 900px;
+                   top: -900px">
 
 
-<div class="fancy">
-<a name="mouse-sprite"></a>
-<a href="Mouse-Sprite.html" target="_blank">
-<img src="html-images/Mouse-Sprite.png" class="superImage" />
-<br/>Mouse Sprite</a>
-<p class ="superText"> Display a sprite at the current position of the mouse. (May be useful for targeting icon or mouse pointer icon.) </p>
-</div>
+    <img src="images/broken.png"
+         style = "width:400px;
+                  height: 400px;
+                  z-index:2;
+                  left: -50px;
+                  top: -1200px">
 
-<div class="fancy">
-<a name="mouse-click"></a>
-<a href="Mouse-Click.html" target="_blank">
-<img src="html-images/Mouse-Click.png" class="superImage" />
-<br/>Mouse Click</a>
-<p class ="superText"> Change the color of a face on a mesh when clicked. </p>
-</div>
+<div class="summary">
+    <h1>Heart♥Doctor</h1>
+  <button type="button" onclick="location.href='waiting-room.html';" >
+                    Let's begin
+  </button>
+                </div>
 
-<div class="fancy">
-<a name="mouse-tooltip"></a>
-<a href="Mouse-Tooltip.html" target="_blank">
-<img src="html-images/Mouse-Tooltip.png" class="superImage" />
-<br/>Mouse Tooltip</a>
-<p class ="superText"> Create a tooltip-style effect to display mesh names when mouse hovers. (Uses ideas from examples: Mouse Sprite, Mouse Hovering, and Texture from Canvas.) </p>
-</div>
-
-<div class="fancy">
-<a name="anaglyph"></a>
-<a href="Anaglyph.html" target="_blank">
-<img src="html-images/Anaglyph.png" class="superImage" />
-<br/>Anaglyph</a>
-<p class ="superText"> Displays a scene rendered using an Anaglyph effect; use red/blue 3D glasses to view.
-</p>
-</div>
-
-<div class="fancy">
-<a name="test"></a>
-<a href="example.html" target="_blank">
-<img src="html-images/robot(image).png" class="superImage" />
-<br/>Anaglyph</a>
-<p class ="superText"> Displays a scene rendered using an Anaglyph effect; use red/blue 3D glasses to view.
-</p>
-</div>
-
-</body>
+  </body>
 </html>

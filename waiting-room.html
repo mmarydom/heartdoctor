@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/waiting-room.css" />
+    <script src="js/waiting-room.js" defer></script>
+  </head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  <body>
+
+     <div class="box">
+        <div id="typedtext"></div>
+        <br>
+        <button type="button" onclick="location.href='surgery1.html';" >
+						          Try therapy doll
+						        </button>
+     </div>
+
+    <div class="card">
+        <div class="card-image card3" onclick="location.href='character-profile.html'"></div>
+    </div>
+    <script src="lib/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".card"),{
+        glare: true,
+        reverse: true,
+        "max-glare": 0.5
+      });
+    </script>
+
+  </body>
+</html>
